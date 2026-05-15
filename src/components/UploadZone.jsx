@@ -55,8 +55,7 @@ export default function UploadZone({ onUploaded }) {
         setError("Erreur réseau. Vérifie ta connexion.");
       });
 
-      const backendUrl = "https://media-backend-bevn.onrender.com";
-      xhr.open("POST", `${backendUrl}/api/upload`);
+      xhr.open("POST", `${BACKEND}/api/upload`);
       xhr.send(formData);
     },
     [onUploaded],
@@ -85,6 +84,8 @@ export default function UploadZone({ onUploaded }) {
     multiple: false,
     disabled: uploading,
   });
+
+  const BACKEND = "https://media-backend-bevn.onrender.com"
 
   return (
     <div className="space-y-3">
