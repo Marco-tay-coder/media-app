@@ -55,7 +55,7 @@ export default function UploadZone({ onUploaded }) {
         setError("Erreur réseau. Vérifie ta connexion.");
       });
 
-      const backendUrl = import.meta.env.VITE_BACKEND_URL || "";
+      const backendUrl = "https://media-backend-bevn.onrender.com";
       xhr.open("POST", `${backendUrl}/api/upload`);
       xhr.send(formData);
     },
