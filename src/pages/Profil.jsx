@@ -60,7 +60,7 @@ export default function Profil() {
       const data = JSON.parse(xhr.responseText);
       setAvatarUrl(data.url);
     };
-    xhr.open("POST", "/api/upload");
+    xhr.open("POST", "https://media-backend-bevn.onrender.com/api/upload");
     xhr.send(formData);
   };
 

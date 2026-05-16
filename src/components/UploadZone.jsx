@@ -2,6 +2,8 @@ import { useState, useCallback } from "react";
 import { UploadCloud, X } from "lucide-react";
 import { useDropzone } from "react-dropzone";
 
+const BACKEND = "https://media-backend-bevn.onrender.com"
+
 const ACCEPTED_TYPES = {
   "image/jpeg": [],
   "image/png": [],
@@ -85,7 +87,6 @@ export default function UploadZone({ onUploaded }) {
     disabled: uploading,
   });
 
-  const BACKEND = "https://media-backend-bevn.onrender.com"
 
   return (
     <div className="space-y-3">
