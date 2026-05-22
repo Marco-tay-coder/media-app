@@ -91,7 +91,7 @@ export default function Dashboard() {
             className={`tab gap-2 ${onglet === "galerie" ? "tab-active" : ""}`}
             onClick={() => setOnglet("galerie")}
           >
-            <Images size={16} /> Ma Galerie
+            <Images size={16} /> Galerie
           </button>
           <button
             role="tab"
